@@ -22,27 +22,19 @@ seagrass_infection_intensity.png: Graph depicting the infection intensity of sea
 environmental_analysis_plots.png: Collection of graphs illustrating the relationship between environmental factors and seagrass health.
 
 How to Use
+
 Clone the Repository:
-
 Copy code
-git clone https://github.com/your_username/your_repository.git
-Navigate to the Repository:
+git clone https://github.com/Cbergma2/Chesapeake-Bay-SWD-Surveys.git
 
-bash
+
+Navigate to the Repository:
 Copy code
 cd your_repository
 Explore the Data:
 
 Open survey_data.csv and environmental_data.csv to examine the raw data.
-Run the Scripts:
 
-Execute data_cleaning.R to clean and preprocess the survey data.
-Run statistical_analysis.R to perform statistical tests and analyses.
-Execute environmental_correlations.R to explore relationships between environmental factors and seagrass health.
-View Maps and Graphs:
-
-Open maps/survey_locations_map.html to interact with the map of survey locations.
-Check the graphs folder to view the generated graphs.
 Requirements
 RStudio
 Required R packages:
