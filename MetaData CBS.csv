@@ -1,0 +1,29 @@
+﻿Sheet,Variable,Units,Class,Description
+Salinity Station Data,CBP Station,Categorical,String,Name of the Chesapeake Bay Program Water Quality Monitoring Station from which the data were obtained
+Salinity Station Data,Year,Years,Numeric,Year the data were collected
+Salinity Station Data,Month,Months,Numeric,Month that the data were collected
+Salinity Station Data,Salinity,ppt,Numeric,The mean salinity for the month that data were collected.  Salinity data were the average of all available data including multiple depths.  Sampling occurs monthly during the winter and bi-weekly during the growing season. 
+,,,,
+Transect SAV Data 2021,Transect ,Categorical,String,Name of the VIMS seagrass monitoring transect
+Transect SAV Data 2021,CBP Station,Categorical,String,CBP Station that is closest to the VIMS transect.  Within 1 km but in deeper water typically. 
+Transect SAV Data 2021,TempLogger,Categorical,String,"Name of the temperature logger closest to the transect, within 1km or on the transect itself.  Data collected within seagrass meadow at sediment surface. "
+Transect SAV Data 2021,Avg_Depth,meters,Numeric,Mean depth MLLW of the vegetated portion of the transect
+Transect SAV Data 2021,Avg_TotalCover_percent,%,Numeric,Mean total cover of SAV per unit area on the transect.  Average of all total cover measurements from 1m2 quadrats taken at 10m intervals along the transect from bed start to bed edge.
+Transect SAV Data 2021,SE_TotalCover,%,Numeric,Standard error of total cover of SAV per unit area on the transect.
+Transect SAV Data 2021,Avg_ZosteraCover_percent,%,Numeric,Mean Zostera cover of SAV per unit area on the transect.  Average of all zostera cover measurements from 1m2 quadrats taken at 10m inervals along transect from bed start to bed edge.  This number is typically lower than total cover because Ruppia is also making up a portion of cover.  
+Transect SAV Data 2021,SE_ZosteraCover,%,Numeric,Standard error of total cover of Zostera per unit area on the transect. 
+Transect SAV Data 2021,Hist_Avg_ZosteraCover_Percent,%,Numeric,Mean Zostera Cover of SAV per unit area averaged across 2016 to 2020.  Data were summarized for each year and then averaged across years.
+Transect SAV Data 2021,Hist_SE_ZosterCover,%,Numeric,Standard error among years in mean Zostera Cover from 2016 to 2020. 
+,,,,
+Temperature Logger Data,TempLogger,Categorical,String,Name of the temperature logger.  Loggers collected temperature at 15 minute intervals and were attached to PVC stakes within the seagrass meadow at the sediment surface. 
+Temperature Logger Data,Year,Years,Numeric,Year data collected.
+Temperature Logger Data,Month,Months,Numeric,Month data was collected.
+Temperature Logger Data,Avg_Temp_C,oC,Numeric,Average temperature for the month that year. 
+Temperature Logger Data,SD_Temp_C,oC,Numeric,Standard deviation of temperature for the month that year.
+Temperature Logger Data,SE_Temp_C,oC,Numeric,Standard error of temperature for the month that year. 
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
