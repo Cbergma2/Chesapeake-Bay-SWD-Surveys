@@ -304,10 +304,10 @@ LabyTemp <- LabyTemp[!is.na(LabyTemp$Year),] #get rid of NAs
 LabySalinity <- read.csv("~/Downloads/GradSchool/Thesis Research/CB Surveys/Stats/LabySalinity.csv")
 LabySalinity <- LabySalinity[!is.na(LabySalinity$Year),] #get rid of NAs
 
-LabyTemp$Site <- as.character(LabyTemp$Site)
-LabyTemp$Site[LabyTemp$Site == "Brown's Bay"] <- "Guinea Marsh"
-LabyTemp$Site[LabyTemp$Site == "Hungars Creek"] <- "Hungars Creek (North and South)"
-LabyTemp$Site <- as.factor(LabyTemp$Site)
+LabyTemp$TempLogger <- as.character(LabyTemp$TempLogger)
+LabyTemp$TempLogger[LabyTemp$TempLogger == "Brown's Bay"] <- "Guinea Marsh"
+LabyTemp$TempLogger[LabyTemp$TempLogger == "Hungars Creek"] <- "Hungars Creek (North and South)"
+LabyTemp$TempLogger <- as.factor(LabyTemp$TempLogger)
 LabyTemp$Year <- as.factor(LabyTemp$Year)
 LabyTemp$Month <- as.factor(LabyTemp$Month)
 LabyTemp$Avg_Temp_C <- as.numeric(LabyTemp$Avg_Temp_C)
