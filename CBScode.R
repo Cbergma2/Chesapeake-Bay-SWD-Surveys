@@ -355,6 +355,30 @@ plot3.1.1 <- ggplot() +
     theme_classic(base_size = 15)
 plot3.1.1
 
+WMCTempYear <- wmc(Avg_Temp_C ~ Year, data=LabyTemp, method="holm")
+
+WMCTempMonth <- wmc(Avg_Temp_C ~ Month+TempLogger, data=LabyTemp, method="holm")
+
+WMCTempMonth <- wmc(Avg_Temp_C ~ TempLogger + Month, data=LabyTemp, method="holm")
+
+WMCTempMonthTest <- wmc(Avg_Temp_C ~ TempLogger, data=LabyTemp, method="holm")
+
+sumTemp <- summarySE(data = LabyTemp, measurevar = "Avg_Temp_C", groupvars = c("TempLogger", "Month"))
+
+TempModel1 <- aov(Avg_Temp_C ~ TempLogger + Year,
+           data = LabyTemp)
+summary(TempModel1)
+
+TempModel2 <- aov(Avg_Temp_C ~ Year * TempLogger,
+                 data = LabyTemp)
+summary(TempModel2)
+
+TempModel3 <- aov(Avg_Temp_C ~ TempLogger + Year + Month,
+                  data = LabyTemp)
+summary(TempModel3)
+
+
+
 ## 3.2 Salinity -------------
 
 plot3.1.2 <- ggplot() +
@@ -380,6 +404,17 @@ plot3.1.2 <- ggplot() +
 plot3.1.2
 
 
+SalinityModel1 <- aov(Salinity ~ CBPStation + Year + Month,
+                  data = LabySalinity)
+summary(SalinityModel1)
+
+SalinityModel1.2 <- aov(Salinity ~ CBPStation * Year + Month,
+                      data = LabySalinity)
+summary(SalinityModel1.2)
+
+SalinityModel2 <- aov(Salinity ~ CBPStation * Year,
+           data = LabySalinity)
+summary(SalinityModel2)
 
 
 
